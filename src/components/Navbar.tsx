@@ -1,6 +1,7 @@
 import { LogOut, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   userName: string;
@@ -32,7 +33,7 @@ export default function Navbar({ userName, role, onLogout }: NavbarProps) {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <span className="text-2xl font-extrabold text-gray-900 dark:text-white">
-              Zaid Traders
+              <Link to="/"> Zaid Traders</Link>
             </span>
           </div>
 
